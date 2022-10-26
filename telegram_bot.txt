@@ -1,0 +1,5 @@
+# write your token and your chat ID below
+
+bot_token: 'enter your Bot Token here without deleting the apostrophes on the sides' # Bot Token
+
+bot_chatID: 'enter your Chat ID here without deleting the apostrophes on the sides' # Chat ID
