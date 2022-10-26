@@ -57,7 +57,7 @@ def callback(call_type=None, logpath=log_directory(logdir=0), call_all=False, re
             function_global.quiet_count = quiet
       lr = learning_rate(lr_type=lr_type, in_lr=in_lr, pa_lr=pa_lr, fi_lr=fi_lr, tot_ep=tot_ep, ft_ep=ft_ep,
                              sd_ep=sd_ep, pw=pw, cy_lr=cy_lr) #call the learning rate function
-      if 'lr' == 5:
+      if lr_type == 5:
         return accelat_function(), tf.keras.callbacks.LearningRateScheduler(lr)  #sends values to the optimizer
       else:
         return tf.keras.callbacks.LearningRateScheduler(lr)  #sends value to the optimizer
